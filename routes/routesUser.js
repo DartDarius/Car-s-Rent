@@ -92,16 +92,4 @@ router.patch(
   }
 )
 
-// router.patch('/user/isVerified/:isVerified', async (req, res) => {
-//   const userId = req.headers.authorization
-//   const isVerified = req.params.isVerified
-//   try {
-//     await updateVerifiedForUser(userId, isVerified)
-//     res.status(200).send(MESSAGE.MESSAGE_CHANGE)
-//   } catch (error) {
-//     console.log(ERROR_MESSAGE.ERROR_IN_PARAMS)
-//     res.status(406).send(ERROR_MESSAGE.ERROR_IN_PARAMS)
-//   }
-// })
-
 module.exports = router

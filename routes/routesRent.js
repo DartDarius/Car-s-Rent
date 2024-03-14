@@ -20,17 +20,6 @@ router.get('/rents/:rentId', async (req, res) => {
   }
 })
 
-// router.post('/rents', isAuth, validateUser, async (req, res) => {
-//   try {
-//     const create = await createRent(req.body)
-//     res.status(201).send(create)
-//     console.log(create)
-//   } catch (error) {
-//     console.log(ERROR_MESSAGE.ERROR_IN_PARAMS)
-//     res.status(406).send(ERROR_MESSAGE.ERROR_IN_PARAMS)
-//   }
-// })
-
 router.post('/rents/:carId', isAuth, validateUser, async (req, res) => {
   try {
     const create = await createRent(req.body)
